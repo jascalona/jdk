@@ -73,11 +73,106 @@ public class Boolean {
          
         Condiciones de Java y Sentencias (if) 
 
+        Menor que: a < b
+        Menor o igual que: a <= b
+        Mayor que: a > b
+        Mayor o igual que: a >= b
+        Igual a a == b
+        No es igual a: a != b
 
 
+        Java tiene las siguientes sentencias condicionales:
 
+       * Se utiliza para especificar un bloque de código que se va a ejecutar, si una condición especificada es verdadera if
+       * Se utiliza para especificar un bloque de código que se va a ejecutar, si la misma condición es falsa else
+       * Se usa para especificar una nueva condición para probar, si la primera condición es falsa else if
+       * Se utiliza para especificar muchos bloques de código alternativos que se van a ejecutar switch
 
          */
+        
+        /*  Sisntaxis          
+        if (condicion) {} // codigo que se ejecuta si la condision es verdadera
+        */
+
+        // En el siguinete ejemplo probamos dos valores para averiguar si 100 es mayor que 80 
+
+        if (100 > 80) { // si 100 es mayor 80 va a imprimir el mensaje de abajo
+            System.out.println("100 es mayor que 80 !" );
+        }
+
+        // Ejemplos con variables
+
+        int var01_if = 20;
+        int var02_if = 50;
+        if (var01_if < var02_if) {  // si 20 es menor que 50 va a imprimir el mensaje de abajo. 
+            System.out.println("la variable 01 es mayor que la variable 02 ! " );
+        } 
+
+        
+        int var03_if = 400;
+        int var04_if = 500;
+        if  (var03_if >= var04_if) {
+            System.out.println("La variable 03 es mayor que la variable 04 !!!");
+        } else {
+        System.out.println("la variable 03 no es mayor que la variable 04 !!!");
+        }
+
+
+        /* Seencia else
+         
+        Utilice la instrucción para especificar un bloque de código que se ejecutará si la condición es .elsefalse
+        
+        Sinstaxis
+         if (condicion) {
+            codigo que se ejecuta solo si la condicion es verdadera 
+         } else {
+            codigo que se ejecuta solo si la condicion es falsa
+         }
+ */
+
+        int variable_else01 = 100;
+        int variable_else02 = 20;
+        if (variable_else01 < variable_else02) {
+            System.out.println("100 es menor que 20");
+        } else {
+            System.out.println("100 no es menor que 20");
+        }
+
+
+        /* Sentencia else if 
+        Utilice la instrucion para especificar una nueva condicion si la primera condicion es .else if false
+        
+        Sintaxis
+
+        if (condicion1) {
+            codigo que se ejecuta si la condicion es verdadera
+        
+        } else if (condicion2) {
+            codigo que se ejecuta si la condicion1 es falsa y la condicion2 es verdadera 
+        
+        } else {
+            codigo que se ejecuta solo si la condicion1 y la condicion2 son falsas
+        }
+
+        */
+
+        //Ejemplo.
+
+        int tempo = 22; 
+        if (tempo < 10) {
+            System.out.println("Buenos dias");
+        } else if (tempo < 18) {
+            System.out.println("Buen dia");
+        }else {
+            System.out.println("Buenas noches");
+        }
+
+        /*En el ejemplo anterior, el tiempo (22) es mayor que 10, por lo que la primera condición es . 
+        La siguiente condición, en la instrucción, también es , por lo que pasamos a la condición, 
+        ya que la condición1 y la condición2 son ambas, e imprimimos en la pantalla "Bueno noche".falseelse iffalseelsefalse
+        
+        Sin embargo, si la hora era 14, nuestro programa imprimiría "Buen día".
+        */
 
     }
 }
