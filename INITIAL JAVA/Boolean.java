@@ -118,7 +118,7 @@ public class Boolean {
         }
 
 
-        /* Seencia else
+        /* Setencia else
          
         Utilice la instrucción para especificar un bloque de código que se ejecutará si la condición es .elsefalse
         
